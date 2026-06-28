@@ -10,7 +10,9 @@
     "test": "node --test",
     "check": "node scripts/check.js",
     "build": "node scripts/check.js && node --check bin/routecard-skill.js",
-    "smoke": "node bin/routecard-skill.js fixtures/action-request.json fixtures/catalog.json --format markdown"
+    "smoke": "node bin/routecard-skill.js fixtures/action-request.json fixtures/catalog.json --format markdown",
+    "package:smoke": "npm pack --dry-run",
+    "release:check": "npm run check && npm test && npm run smoke && npm run package:smoke"
   },
   "keywords": [
     "agent-skill",
@@ -20,6 +22,14 @@
     "approval"
   ],
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rogerchappel/routecard-skill.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rogerchappel/routecard-skill/issues"
+  },
+  "homepage": "https://github.com/rogerchappel/routecard-skill#readme",
   "engines": {
     "node": ">=18"
   },
@@ -28,7 +38,10 @@
     "docs/",
     "fixtures/",
     "src/",
+    "scripts/",
+    "test/",
     "SKILL.md",
-    "README.md"
+    "README.md",
+    "LICENSE"
   ]
 }

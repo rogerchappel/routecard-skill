@@ -11,6 +11,17 @@ node bin/routecard-skill.js fixtures/action-request.json fixtures/catalog.json -
 node bin/routecard-skill.js fixtures/action-request.json fixtures/catalog.json --format markdown
 ```
 
+## Verify
+
+Run the full local release gate before changing a route rule:
+
+```sh
+npm run release:check
+```
+
+The gate checks syntax, fixture-backed tests, the markdown smoke run, and the
+dry-run npm package contents.
+
 ## Inputs
 
 Action request JSON:
