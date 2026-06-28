@@ -1,0 +1,19 @@
+{
+  "action": "create follow-up task",
+  "intent": "prepare a CRM task after a meeting",
+  "capability": "crm.task.create",
+  "externalWrite": true,
+  "identityRequired": true,
+  "identity": "",
+  "inputs": {
+    "contactId": "c_123",
+    "title": "Send pricing recap"
+  },
+  "requiredEvidence": [
+    "meetingNotes",
+    "approval"
+  ],
+  "evidence": {
+    "meetingNotes": "notes/2026-06-28.md"
+  }
+}

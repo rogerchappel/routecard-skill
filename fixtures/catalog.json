@@ -1,0 +1,41 @@
+{
+  "connectors": [
+    {
+      "name": "crm-primary",
+      "capabilities": [
+        "crm.task.create",
+        "crm.contact.read"
+      ],
+      "requiredInputs": [
+        "contactId",
+        "title"
+      ],
+      "requiresApproval": true,
+      "approval": "CRM write approval",
+      "risk": "high"
+    },
+    {
+      "name": "project-board",
+      "capabilities": [
+        "project.task.create"
+      ],
+      "requiredInputs": [
+        "title"
+      ],
+      "requiresApproval": true,
+      "approval": "project write approval",
+      "risk": "medium"
+    },
+    {
+      "name": "local-draft",
+      "capabilities": [
+        "crm.task.create"
+      ],
+      "requiredInputs": [
+        "title"
+      ],
+      "requiresApproval": false,
+      "risk": "low"
+    }
+  ]
+}
