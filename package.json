@@ -1,0 +1,34 @@
+{
+  "name": "routecard-skill",
+  "version": "0.1.0",
+  "description": "Local-first agent skill for planning connector route cards before external actions.",
+  "type": "module",
+  "bin": {
+    "routecard-skill": "./bin/routecard-skill.js"
+  },
+  "scripts": {
+    "test": "node --test",
+    "check": "node scripts/check.js",
+    "build": "node scripts/check.js && node --check bin/routecard-skill.js",
+    "smoke": "node bin/routecard-skill.js fixtures/action-request.json fixtures/catalog.json --format markdown"
+  },
+  "keywords": [
+    "agent-skill",
+    "connector",
+    "routing",
+    "dry-run",
+    "approval"
+  ],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18"
+  },
+  "files": [
+    "bin/",
+    "docs/",
+    "fixtures/",
+    "src/",
+    "SKILL.md",
+    "README.md"
+  ]
+}
