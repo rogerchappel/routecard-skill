@@ -11,7 +11,7 @@
     "check": "node scripts/check.js",
     "build": "node scripts/check.js && node --check bin/routecard-skill.js",
     "smoke": "node bin/routecard-skill.js fixtures/action-request.json fixtures/catalog.json --format markdown",
-    "package:smoke": "npm pack --dry-run",
+    "package:smoke": "node scripts/package-smoke.js",
     "release:check": "npm run check && npm test && npm run smoke && npm run package:smoke"
   },
   "keywords": [
@@ -42,6 +42,8 @@
     "test/",
     "SKILL.md",
     "README.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md",
+    "SECURITY.md"
   ]
 }
