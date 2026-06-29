@@ -20,7 +20,7 @@ npm run release:check
 ```
 
 The gate checks syntax, fixture-backed tests, the markdown smoke run, and the
-dry-run npm package contents.
+assertion-backed dry-run npm package contents.
 
 ## Inputs
 
@@ -48,3 +48,19 @@ This package never calls connectors. It defaults to `blocked` when required appr
 - Route scoring is deterministic and intentionally small.
 - It does not read real connector manifests or credentials.
 - It does not replace organization-specific policy engines.
+
+## Package Contents
+
+`npm run package:smoke` verifies that the CLI, library, fixtures, skill
+instructions, release notes, license, and security policy are present in the
+dry-run tarball.
+
+## Security
+
+See [SECURITY.md](SECURITY.md) for supported versions and vulnerability
+reporting guidance. Keep real connector credentials, customer data, and
+production approval records out of public issues and fixtures.
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
