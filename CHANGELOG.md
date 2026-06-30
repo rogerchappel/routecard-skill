@@ -8,3 +8,5 @@ All notable changes to this project will be documented in this file.
 - Includes fixture-backed tests, CLI smoke coverage, CI, and release checks.
 - Documents approval gates, dry-run behavior, and limitations for connector
   route card generation.
+- Adds public contribution guidance and package smoke coverage for the
+  contributing guide.

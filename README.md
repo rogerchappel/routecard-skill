@@ -52,14 +52,19 @@ This package never calls connectors. It defaults to `blocked` when required appr
 ## Package Contents
 
 `npm run package:smoke` verifies that the CLI, library, fixtures, skill
-instructions, release notes, license, and security policy are present in the
-dry-run tarball.
+instructions, release notes, license, security policy, and contributing guide
+are present in the dry-run tarball.
 
 ## Security
 
 See [SECURITY.md](SECURITY.md) for supported versions and vulnerability
 reporting guidance. Keep real connector credentials, customer data, and
 production approval records out of public issues and fixtures.
+
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md) for local checks and fixture expectations
+before opening a pull request.
 
 ## Changelog
 
