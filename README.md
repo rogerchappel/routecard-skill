@@ -69,3 +69,9 @@ before opening a pull request.
 ## Changelog
 
 See [CHANGELOG.md](CHANGELOG.md).
+
+## Verification
+
+```bash
+npm test
+```
